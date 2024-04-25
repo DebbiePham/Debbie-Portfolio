@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Debbie's Personal Portfolio Website</title>
+</head>
+
+<body>
+    <div id="home">
+        <div class="container">
+            <nav>
+                <img src="assets/logo.PNG" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+            
+            
+            <div id="profile">
+                <div class="section-text">
+                    <p class="section-text-1">Hello, I'm</p>
+                    <h1 class="title">Debbie Pham</h1>
+                    <p class="section-text-2">Software Developer</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2" onclick="window.open('./assets/Debbie Pham - Resume .pdf')">
+                            Download CV
+                        </button>
+                        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                            Contact Info
+                        </button>
+                    </div>
+                    <div id="socials-container">
+                        <a href="https://www.linkedin.com/in/debbie-pham-8a09a850/" target="_blank">
+                            <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" />
+                        </a>
+                        <!--   <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon"
+                            onclick="location.href='https://www.linkedin.com/in/debbie-pham-8a09a850/'" directly go to the link without open a new tab/> -->
+                        <a href="https://github.com/DebbiePham" target="_blank">
+                            <img src="./assets/github.png" alt="Github Profile" class="icon" />
+                        </a>
+
+                    </div>
+                    <div id="socials-container-mobile">
+                        <a href="https://www.linkedin.com/in/debbie-pham-8a09a850/" target="_blank">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/DebbiePham" target="_blank">
+                            <i class="fa-brands fa-square-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/user.png" alt="about img" id="about-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>With a decade in management and HR, including 5 years in healthcare, I've excelled in recruiting,
+                        onboarding, and employee relations. Now, blending my healthcare background with coding skills
+                        from Coding Dojo BootCamp, I'm transitioning to software development. Detail-oriented and
+                        adaptable, I bring a unique perspective to tech challenges. Ready to make an impact in this
+                        dynamic field.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web Development</span><br>Web app Development
+                            </li>
+                            <li>
+                                <span>App Development</span><br>Building Android/iOS apps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>July,2023–Current</span><br>learning and freelance full stasks software development
+                            </li>
+                            <li>
+                                <span>2022–2023</span><br>Human Resource Associate - MultiCare Health System, Tacoma, WA 
+                            </li>
+                            <li>
+                                <span>2021-2022</span><br>Leave of Absence Specialist (Interim COVID-19 Workforce) - Seattle Children’s Hospital, Seattle, WA 
+                                
+                            </li>
+                            <li>
+                                <span>2019-2021</span><br>Pharmacy Operation Manager - Walgreens, Kirkland, WA 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2024</span><br>Coding Certificate from Coding Dojo BootCamp(Colorado Technical University)
+                            </li>
+                            <li>
+                                <span>2015</span><br>BA from Eastern Washington University
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+                <div class="project">
+                    <img src="assets/project-1.png" >
+                    <div class="layer">
+                        <h3>Project Name</h3>
+                        <p>project description</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/project-2.png" >
+                    <div class="layer">
+                        <h3>Project Name</h3>
+                        <p>project description</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="assets/project-3.png" >
+                    <div class="layer">
+                        <h3>Project Name</h3>
+                        <p>project description</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn-projects">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i> phone number</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/debbie-pham-8a09a850/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/DebbiePham"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="assets/Debbie Pham - Resume .pdf" download class="btn btncv">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ D.P Tech. Made by Debbie Pham <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5d76557cfc.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
